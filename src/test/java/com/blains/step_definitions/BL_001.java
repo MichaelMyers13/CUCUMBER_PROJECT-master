@@ -9,7 +9,7 @@ public class BL_001 {
 
 
   @Given("{string} open the BL main page")
-  public void user_open_the_bl_main_page() {
+  public void user_open_the_bl_main_page(String user) {
 
     WebDriverManager.chromedriver().clearDriverCache().setup();
    Driver.getDriver().get(ConfigurationReader.getProperty("BL_MAIN_PAGE"));

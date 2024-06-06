@@ -8,7 +8,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class BookitUtils {
+public class BL_Utils {
 
     public static String generateToken(String email, String password) {
 
