@@ -24,7 +24,7 @@ public class BookitUtils {
         return token;
     }
 
-    //teacher , team-leader , team-member
+    //USER1 , team-leader , team-member
     public static String generateTokenByRole(String role) {
 
         //returnCredentials(role);
@@ -45,9 +45,9 @@ public class BookitUtils {
         String password = "";
 
         switch (role) {
-            case "teacher":
-                email = Environment.TEACHER_EMAIL;
-                password = Environment.TEACHER_PASSWORD;
+            case "USER1":
+                email = Environment.USER1_EMAIL;
+                password = Environment.USER1_PASSWORD;
                 break;
 
             case "team-member":

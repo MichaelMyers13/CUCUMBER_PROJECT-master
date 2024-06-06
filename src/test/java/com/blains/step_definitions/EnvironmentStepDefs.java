@@ -8,11 +8,11 @@ public class EnvironmentStepDefs {
     public void i_get_related_environment_information() {
         System.out.println("Environment.URL = " + Environment.URL);
         System.out.println("Environment.BASE_URL = " + Environment.BASE_URL);
-        System.out.println("Environment.TEACHER_EMAIL = " + Environment.TEACHER_EMAIL);
+        System.out.println("Environment.USER1_EMAIL = " + Environment.USER1_EMAIL);
 
-        String teacher_email = System.getProperty("teacher_email") != null ?
-                teacher_email = System.getProperty("teacher_email") : Environment.TEACHER_EMAIL;
+        String USER1_email = System.getProperty("USER1_email") != null ?
+                USER1_email = System.getProperty("USER1_email") : Environment.USER1_EMAIL;
 
-        System.out.println("teacher_email = " + teacher_email);
+        System.out.println("USER1_email = " + USER1_email);
     }
 }

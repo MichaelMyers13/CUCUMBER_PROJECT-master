@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 public class SignInPage {
 	
 	public SignInPage() {
-		PageFactory.initElements(Driver.get(), this);
+		PageFactory.initElements(Driver.getDriver(), this);
 	}	
 	
 	@FindBy(name="email")
@@ -22,15 +22,15 @@ public class SignInPage {
 	@FindBy(xpath = "//button[.='sign in']")
 	public WebElement signInButton;
 
-	//Roles : teacher , team-member , team-leader
+	//Roles : USER1 , team-member , team-leader
 	public void login(String role) {
 		String email = "";
 		String password = "";
 
 		switch (role) {
-			case "teacher":
-				email = Environment.TEACHER_EMAIL;
-				password = Environment.TEACHER_PASSWORD;
+			case "USER1":
+				email = Environment.USER1_EMAIL;
+				password = Environment.USER1_PASSWORD;
 				break;
 
 			case "team-member":

@@ -11,8 +11,8 @@ public class Environment {
         public static final String DB_USERNAME;
         public static final String DB_PASSWORD;
         public static final String DB_URL;
-        public static final String TEACHER_EMAIL;
-        public static final String TEACHER_PASSWORD;
+        public static final String USER1_EMAIL;
+        public static final String USER1_PASSWORD;
         public static final String MEMBER_EMAIL;
         public static final String MEMBER_PASSWORD;
         public static final String LEADER_EMAIL;
@@ -44,8 +44,8 @@ public class Environment {
         DB_USERNAME = properties.getProperty("dbUsername");
         DB_PASSWORD = properties.getProperty("dbPassword");
         DB_URL = properties.getProperty("dbUrl");
-        TEACHER_EMAIL = properties.getProperty("teacher_email");
-        TEACHER_PASSWORD = properties.getProperty("teacher_password");
+        USER1_EMAIL = properties.getProperty("USER1_email");
+        USER1_PASSWORD = properties.getProperty("USER1_password");
         MEMBER_EMAIL = properties.getProperty("team_member_email");
         MEMBER_PASSWORD = properties.getProperty("team_member_password");
         LEADER_EMAIL = properties.getProperty("team_leader_email");
